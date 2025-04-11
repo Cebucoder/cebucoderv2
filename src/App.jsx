@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
@@ -12,9 +12,8 @@ import ProjectAssets from './pages/ProjectAssets/ProjectAssets';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/cebucoderv2"> {/* Ensure BrowserRouter is wrapped here */}
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
@@ -27,7 +26,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 
