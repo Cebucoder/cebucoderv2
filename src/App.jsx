@@ -12,11 +12,11 @@ import ProjectAssets from './pages/ProjectAssets/ProjectAssets';
 
 const App = () => {
   return (
-    <HashRouter basename="/cebucoderv2"> {/* Ensure BrowserRouter is wrapped here */}
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/source-code" element={<SourceCode />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/services" element={<Services />} />

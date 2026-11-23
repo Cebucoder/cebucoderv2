@@ -27,7 +27,7 @@ const Navbar = () => {
                             <ul className='navbar_list'>
                                 <li>
                                     <ion-icon name="albums-outline"></ion-icon>
-                                    <NavLink to="/" className={({ isActive }) => isActive ? 'active_nav' : ''}>Projects</NavLink>
+                                    <NavLink to="/home" className={({ isActive }) => isActive ? 'active_nav' : ''}>Home</NavLink>
                                 </li>
                                 <li>
                                     <ion-icon name="terminal-outline"></ion-icon>
