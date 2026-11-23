@@ -60,28 +60,3 @@ p {
   padding: 100px 20px 25px 290px;
 }
 
-.temp_con.front_end_proj li a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: max-content;
-    height: auto;
-    transform: translate(-50%, -50%) translateY(20px);
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: #373f62;
-    border: 1px solid #64ffdb;
-    font-size: 14px;
-    font-weight: 500;
-    color: #64ffdb;
-    z-index: 5;
-    font-weight: 600;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-
-.temp_con ul li:hover a{
-    opacity: 1;
-        transform: translate(-50%, -50%) translateY(0px);
-}

@@ -81,7 +81,7 @@
     transition: 0.3s;
 }
 
-.temp_con.front_end_proj li a {
+.temp_con li a {
     position: absolute;
     top: 50%;
     left: 50%;
