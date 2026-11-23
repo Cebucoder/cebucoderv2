@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
@@ -12,7 +12,7 @@ import ProjectAssets from './pages/ProjectAssets/ProjectAssets';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/cebucoderv2"> {/* Ensure BrowserRouter is wrapped here */}
+    <HashRouter basename="/cebucoderv2"> {/* Ensure BrowserRouter is wrapped here */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +26,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
