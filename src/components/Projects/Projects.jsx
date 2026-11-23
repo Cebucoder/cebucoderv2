@@ -141,11 +141,10 @@ const Projects = ({ activeCategory }) => {
                 <ul>
                     {projectData[activeCategory]?.map(({ img, link }, idx) => (
                         <li key={idx}>
-                            <a href={link} target="_blank" rel="noopener noreferrer">
-                                <figure>
-                                    <img src={img} alt={`Project ${idx + 1}`} loading='lazy' />
-                                </figure>
-                            </a>
+                            <figure>
+                                <img src={img} alt={`Project ${idx + 1}`} loading='lazy' />
+                            </figure>
+                            <a href={link} target="_blank" rel="noopener noreferrer">Project Details</a>
                         </li>
                     ))}
                 </ul>
