@@ -82,9 +82,15 @@ p {
 }
 }
 
-@media only screen and (max-width:360px){
+@media only screen and (max-width:400px){
 .temp_con ul {
     grid-template-columns: 1fr !important;
     gap: 11px !important;
 }
+.temp_wrapper h1 {
+    font-size: 18px;
+}
+.main_con {
+        padding: 30px 20px !important;
+    }
 }
