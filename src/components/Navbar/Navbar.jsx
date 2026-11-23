@@ -1,11 +1,21 @@
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 
 import comp_logov1 from '/src/assets/logov1.png'
+import { CgMenuRight } from "react-icons/cg";
+
 
 const Navbar = () => {
+
+const [isOpen, setIsOpen] = useState(false);
+
+const handleMenuClick = () => {
+setIsOpen(!isOpen);
+};
+
+
     return (
         <>
             <header>
@@ -16,23 +26,30 @@ const Navbar = () => {
                                 <figure><img src={comp_logov1} alt="" /></figure>
                                 <h1>Cebu<span>Coder</span></h1>
                             </div>
+                            <div className="nav_menu" onClick={handleMenuClick}>
+                                <CgMenuRight />
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <nav>
+            <nav className={`navigationmenu ${isOpen ? "open" : ""}`}>
                 <div className='navbar'>
                     <div className="temp_wrapper">
                         <div className="navbar_con">
-                            <ul className='navbar_list'>
+                            <ul className='navbar_list' onClick={() => setIsOpen(false)}>
                                 <li>
                                     <ion-icon name="albums-outline"></ion-icon>
                                     <NavLink to="/" className={({ isActive }) => isActive ? 'active_nav' : ''}>Home</NavLink>
                                 </li>
                                 <li>
                                     <ion-icon name="terminal-outline"></ion-icon>
+                                    <NavLink to="/my-client" className={({ isActive }) => isActive ? 'active_nav' : ''}>My Client</NavLink>
+                                </li>                                
+                                {/* <li>
+                                    <ion-icon name="terminal-outline"></ion-icon>
                                     <NavLink to="/source-code" className={({ isActive }) => isActive ? 'active_nav' : ''}>Source Code</NavLink>
-                                </li>
+                                </li> */}
                                 <li>
                                     <ion-icon name="ribbon-outline"></ion-icon>
                                     <NavLink to="/certificate" className={({ isActive }) => isActive ? 'active_nav' : ''}>Certificate</NavLink>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './main.css'
 import Projects from '../Projects/Projects'
+import Footer from '../Footer/Footer';
 
 const Main = () => {
 
@@ -43,6 +44,7 @@ const Main = () => {
                     {/* Projects Component */}
                     <div className="main_holder">
                         <Projects activeCategory={activeCategory} />
+                        <Footer/>
                     </div>
                 </div>
             </div>

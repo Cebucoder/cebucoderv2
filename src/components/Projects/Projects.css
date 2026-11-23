@@ -5,6 +5,7 @@
 .proj_btn_con ul {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .proj_btn_con ul li {
@@ -43,7 +44,7 @@
 .temp_con ul li {
     max-width: 100%;
     width: 100%;
-    min-height: 200px;
+    min-height: auto;
     border-radius: 10px;
     overflow: hidden;
     background: #373f627e;

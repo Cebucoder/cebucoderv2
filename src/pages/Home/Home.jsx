@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Main from '../../components/MainCon/main'
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 
 const Home = () => {

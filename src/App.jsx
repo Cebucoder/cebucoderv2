@@ -9,6 +9,7 @@ import Main from './components/MainCon/main';
 import Home from './pages/Home/Home';
 import SourceCode from './pages/SourceCode/SourceCode';
 import ProjectAssets from './pages/ProjectAssets/ProjectAssets';
+import Client from './pages/Client/Client';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/my-client" element={<Client />} />
         <Route path="/source-code" element={<SourceCode />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/services" element={<Services />} />
@@ -25,7 +27,6 @@ const App = () => {
         <Route path="/templates" element={<ProjectAssets />} />
       </Routes>
 
-      <Footer />
     </HashRouter>
   );
 };

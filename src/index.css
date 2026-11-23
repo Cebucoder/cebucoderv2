@@ -60,3 +60,31 @@ p {
   padding: 100px 20px 25px 290px;
 }
 
+@media only screen and (max-width:1100px){
+
+  nav {
+    left: -250px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .main{
+    padding-left: 0 !important;
+  }
+  .main_con {
+      padding: 50px 20px !important;
+  }
+}
+
+@media only screen and (max-width:800px){
+.temp_con ul {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 11px !important;
+}
+}
+
+@media only screen and (max-width:360px){
+.temp_con ul {
+    grid-template-columns: 1fr !important;
+    gap: 11px !important;
+}
+}
